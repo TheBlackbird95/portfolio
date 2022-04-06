@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<title>Portfolio Kos</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+  		<a href="index.html">
+			<img src="logo.jpg" alt="KosLogo" width="200" height="114">
+ 		</a>
+	</div>
+
+	<div id="topnav">
+  		<a href="index.html">Početna</a>
+		<a href="galerija.html">Galerija</a>
+  		<a href="kontakt.html">Kontakt</a>
+	</div>
+
+	<div class="GalleryRow">
+ 		<div class="GalleryColumn">
+    		<img src="spotsM.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			<p>Korekcije</p>
+  		</div>
+  		<div class="GalleryColumn">
+    		<img src="towerM.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			<p>Dorađivanje</p>
+  		</div>
+  		<div class="GalleryColumn">
+   			<img src="korekcijeM.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			<p>Retuširanje</p>
+  		</div>
+		<div class="GalleryColumn">
+   			<img src="Baby_giraffeM.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			<p>Crtanje žirafe</p>
+  		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+  		<span class="close cursor" onclick="closeModal()">&times;</span>
+  		<div class="modal-content">
+    		<div class="mySlides">
+      			<div class="numbertext">1 / 4</div>
+      			<img src="spots.jpg">
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">2 / 4</div>
+     			<img src="tower.jpg" >
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">3 / 4</div>
+     			<img src="korekcije.jpg">
+    		</div>
+			<div class="mySlides">
+      			<div class="numbertext">4 / 4</div>
+     			<img src="Baby_giraffe.jpg">
+    		</div>
+    	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    	<div class="caption-container">
+      		<p id="caption"></p>
+    	</div>
+    	<div class="GalleryColumn">
+      		<img class="demo" src="spotsM.jpg" onclick="currentSlide(1)" alt="Spots">
+    	</div>
+   		<div class="GalleryColumn">
+      		<img class="demo" src="towerM.jpg" onclick="currentSlide(2)" alt="Tower">
+    	</div>
+    	<div class="GalleryColumn">
+      		<img class="demo" src="korekcijeM.jpg" onclick="currentSlide(3)" alt="Korekcije">
+    	</div>
+		<div class="GalleryColumn">
+      		<img class="demo" src="Baby_giraffeM.jpg" onclick="currentSlide(4)" alt="Baby Giraffe">
+    	</div>
+  		</div>
+	</div>
+
+
+
+  <div id="footer">
+  		<a target="_blank" href="http://www.facebook.com">
+			<img src="logo-facebook.png" alt="logoFacebook">
+ 		</a>
+	  	<a target="_blank" href="http://www.twitter.com">
+			<img src="logo-twitter.png" alt="logoTwitter">
+ 		</a>
+	  	<a target="_blank" href="http://www.instagram.com">
+			<img src="logo-instagram.png" alt="logoInstagram">
+ 		</a>
+	</div>
+</div>
+
+
+
+
+
+
+	<script src="app.js"></script>
+</body>
+</html>
